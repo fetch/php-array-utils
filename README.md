@@ -22,11 +22,11 @@ _NB: This method modifies the original variable._
 
 Make multidimensional array flat.
 
-#### `array_pick(array $array, $keys)`
+#### `array_pick(array $array, $keys[, $key[, $key]])`
 
 Return array with only the keys in `$keys`.
 
-#### `array_reject(array $array, $keys)`
+#### `array_reject(array $array, $keys[, $key[, $key]])`
 
 Return array without the keys in `$keys`.
 This is the inverse of `array_pick`
