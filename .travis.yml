@@ -6,6 +6,10 @@ php:
   - 5.6
   - hhvm
 install:
+  - |
+    if $TRAVIS_SECURE_ENV_VARS; then
+      composer config github-oauth.github.com $GITHUB_OAUTH_TOKEN
+    fi
   - composer install --dev
 script:
   - ./vendor/bin/phpunit
