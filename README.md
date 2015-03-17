@@ -1,4 +1,4 @@
-# PHP array utility functions.
+# PHP array utility functions. [![Build Status](https://travis-ci.org/fetch/php-array-utils.svg?branch=master)](https://travis-ci.org/fetch/php-array-utils)
 
 This is a set of utility functions for array alteration and handling.
 
