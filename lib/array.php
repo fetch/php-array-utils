@@ -74,11 +74,10 @@ namespace {
      * @return array
      */
     function array_pick(array $array, $keys){
-      $arguments = func_get_args();
       if(func_num_args() > 2){
+        $arguments = func_get_args();
         $keys = array_slice($arguments, 1);
-      }
-      if(!is_array($keys)){
+      }elseif(!is_array($keys)){
         $keys = array($keys);
       }
       return array_intersect_key($array, array_flip($keys));
@@ -97,11 +96,10 @@ namespace {
      * @return array
      */
     function array_reject(array $array, $keys){
-      $arguments = func_get_args();
       if(func_num_args() > 2){
+        $arguments = func_get_args();
         $keys = array_slice($arguments, 1);
-      }
-      if(!is_array($keys)){
+      }elseif(!is_array($keys)){
         $keys = array($keys);
       }
       return array_diff_key($array, array_flip($keys));
