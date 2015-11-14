@@ -30,7 +30,7 @@ namespace {
      * @param string $key
      * @return mixed
      */
-    function array_get(array &$data, $key){
+    function array_get(array $data, $key){
       if(array_key_exists($key, $data)){
         return $data[$key];
       }

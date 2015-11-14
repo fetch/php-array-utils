@@ -12,13 +12,11 @@ Deletes entry from array and return its value.
 
 _NB: This method modifies the original variable._
 
-#### `array_get(array &$array, $key)`
+#### `array_get(array $array, $key)`
 
 Lookup entry in array by key and return its value, returns `false` if not found.
 
-_NB: This method modifies the original variable._
-
-#### ```array_flatten(array $array)```
+#### `array_flatten(array $array)`
 
 Make multidimensional array flat.
 
